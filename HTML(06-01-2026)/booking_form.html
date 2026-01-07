@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Farm House Booking</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<header>
+    <h1>Farm House Booking</h1>
+    <p>Book your peaceful farm house stay</p>
+
+    <nav>
+        <a href="#">Home</a> |
+        <a href="#">Booking</a> |
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<main>
+
+<section>
+    <h2>Booking Form</h2>
+
+    <form 
+        action="https://wa.me/918143097741?text=Hello%2C%20I%20want%20to%20book%20a%20farm%20house."
+        method="get"
+        target="_blank">
+
+        <fieldset>
+            <legend>Personal Details</legend>
+
+            <label>Full Name</label><br>
+            <input type="text" required><br><br>
+
+            <label>Email</label><br>
+            <input type="email" required><br><br>
+
+            <label>Mobile Number</label><br>
+            <input type="tel" pattern="[0-9]{10}" required><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Booking Details</legend>
+
+            <label>Check-in Date</label><br>
+            <input type="date" required><br><br>
+
+            <label>Check-out Date</label><br>
+            <input type="date" required><br><br>
+
+            <label>Guests</label><br>
+            <input type="number" min="1" max="20" required><br><br>
+
+            <label>Farm House Type</label><br>
+            <select required>
+                <option value="">--Select--</option>
+                <option>Standard</option>
+                <option>Luxury</option>
+                <option>Premium</option>
+            </select><br><br>
+        </fieldset>
+
+        <input type="submit" value="Book Now">
+    </form>
+</section>
+
+<aside>
+
+    <img 
+        src="https://gos3.ibcdn.com/69256c44-b62d-4e91-b7c5-a906f00f7980.jpg"
+        alt="Farm House"
+       >
+
+    <br><br>
+
+    <iframe
+        src="https://www.google.com/maps?q=Kalyani+Tech+Park+B2+Nanakramguda+Hyderabad&output=embed">
+    </iframe>
+
+    <p>✔ Peaceful location</p>
+    <p>✔ Affordable pricing</p>
+    <p>✔ Luxury amenities</p>
+
+</aside>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Farm House Booking. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

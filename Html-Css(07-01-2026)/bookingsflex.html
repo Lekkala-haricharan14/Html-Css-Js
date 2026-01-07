@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Farm House Booking</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            margin: 0;
+        }
+
+        header {
+            background-color: #264944;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        main {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        section {
+            flex: 3;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        aside {
+            flex: 1;
+            background: #e9f0ef;
+            padding: 20px;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        h2, h3 {
+            color: #264944;
+        }
+
+        fieldset {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 6px;
+        }
+
+        legend {
+            font-weight: bold;
+            color: #264944;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        input[type="submit"] {
+            background-color: #264944;
+            color: white;
+            border: none;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #1f3c39;
+        }
+
+        .aside-img {
+            width: 100%;
+            border-radius: 10px;
+            margin: 12px 0;
+        }
+
+        .map {
+            width: 100%;
+            height: 220px;
+            border: 0;
+            border-radius: 10px;
+            margin-bottom: 12px;
+        }
+
+        footer {
+            background-color: #264944;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        @media (max-width: 768px) {
+            main {
+                flex-direction: column;
+            }
+
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            aside {
+                order: -1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Farm House Booking</h1>
+    <p>Book your peaceful farm house stay</p>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Booking</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<main>
+
+<section>
+    <h2>Booking Form</h2>
+
+    <form 
+        action="https://wa.me/918143097741?text=Hello%2C%20I%20want%20to%20book%20a%20farm%20house."
+        method="get"
+        target="_blank">
+
+        <fieldset>
+            <legend>Personal Details</legend>
+
+            <label>Full Name</label>
+            <input type="text" required>
+
+            <label>Email</label>
+            <input type="email" required>
+
+            <label>Mobile Number</label>
+            <input type="tel" pattern="[0-9]{10}" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Booking Details</legend>
+
+            <label>Check-in Date</label>
+            <input type="date" required>
+
+            <label>Check-out Date</label>
+            <input type="date" required>
+
+            <label>Guests</label>
+            <input type="number" min="1" max="20" required>
+
+            <label>Farm House Type</label>
+            <select required>
+                <option value="">--Select--</option>
+                <option>Standard</option>
+                <option>Luxury</option>
+                <option>Premium</option>
+            </select>
+        </fieldset>
+
+        <input type="submit" value="Book Now">
+    </form>
+</section>
+
+<aside>
+    <img 
+        src="https://gos3.ibcdn.com/69256c44-b62d-4e91-b7c5-a906f00f7980.jpg"
+        alt="Farm House"
+        class="aside-img">
+
+    <iframe
+        class="map"
+        src="https://www.google.com/maps?q=Kalyani+Tech+Park+B2+Nanakramguda+Hyderabad&output=embed"
+        loading="lazy">
+    </iframe>
+
+    <p>✔ Peaceful location</p>
+    <p>✔ Affordable pricing</p>
+    <p>✔ Luxury amenities</p>
+</aside>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Farm House Booking. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
