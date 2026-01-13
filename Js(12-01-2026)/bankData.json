@@ -1,0 +1,199 @@
+{
+  "users": [
+    {
+      "userId": "USR1",
+      "name": "John Doe"
+    },
+    {
+      "userId": "USR2",
+      "name": "Rahul Kumar"
+    },
+    {
+      "userId": "USR3",
+      "name": "Ananya Sharma"
+    }
+  ],
+  "accounts": [
+    {
+      "accountNumber": "SAV001",
+      "userId": "USR1",
+      "type": "savings",
+      "balance": 4000
+    },
+    {
+      "accountNumber": "CHK001",
+      "userId": "USR1",
+      "type": "checking",
+      "balance": 2600
+    },
+    {
+      "accountNumber": "SAV002",
+      "userId": "USR2",
+      "type": "savings",
+      "balance": 6000
+    },
+    {
+      "accountNumber": "CHK002",
+      "userId": "USR2",
+      "type": "checking",
+      "balance": 2800
+    },
+    {
+      "accountNumber": "INV002",
+      "userId": "USR3",
+      "type": "investment",
+      "balance": 14200
+    }
+  ],
+  "transactions": [
+    {
+      "accountNumber": "SAV001",
+      "userId": "USR1",
+      "type": "credit",
+      "amount": 500,
+      "description": "Bonus",
+      "balanceAfter": 5500,
+      "date": "2026-01-13T05:08:28.293Z"
+    },
+    {
+      "accountNumber": "SAV001",
+      "userId": "USR1",
+      "type": "debit",
+      "amount": 300,
+      "description": "Shopping",
+      "balanceAfter": 5200,
+      "date": "2026-01-13T05:08:28.330Z"
+    },
+    {
+      "accountNumber": "CHK001",
+      "userId": "USR1",
+      "type": "credit",
+      "amount": 1000,
+      "description": "Freelance",
+      "balanceAfter": 3000,
+      "date": "2026-01-13T05:08:28.370Z"
+    },
+    {
+      "accountNumber": "CHK001",
+      "userId": "USR1",
+      "type": "debit",
+      "amount": 400,
+      "description": "ATM",
+      "balanceAfter": 2600,
+      "date": "2026-01-13T05:08:28.416Z"
+    },
+    {
+      "accountNumber": "SAV001",
+      "userId": "USR1",
+      "type": "debit",
+      "amount": 1200,
+      "description": "Health Insurance Premium",
+      "balanceAfter": 4000,
+      "date": "2026-01-13T05:08:28.457Z"
+    },
+    {
+      "accountNumber": "SAV002",
+      "userId": "USR2",
+      "type": "credit",
+      "amount": 2000,
+      "description": "Salary",
+      "balanceAfter": 10000,
+      "date": "2026-01-13T05:08:28.583Z"
+    },
+    {
+      "accountNumber": "SAV002",
+      "userId": "USR2",
+      "type": "debit",
+      "amount": 1500,
+      "description": "Rent Payment",
+      "balanceAfter": 8500,
+      "date": "2026-01-13T05:08:28.627Z"
+    },
+    {
+      "accountNumber": "CHK002",
+      "userId": "USR2",
+      "type": "credit",
+      "amount": 500,
+      "description": "Cash Deposit",
+      "balanceAfter": 3500,
+      "date": "2026-01-13T05:08:28.656Z"
+    },
+    {
+      "accountNumber": "CHK002",
+      "userId": "USR2",
+      "type": "debit",
+      "amount": 700,
+      "description": "Online Shopping",
+      "balanceAfter": 2800,
+      "date": "2026-01-13T05:08:28.698Z"
+    },
+    {
+      "accountNumber": "SAV002",
+      "userId": "USR2",
+      "type": "debit",
+      "amount": 2500,
+      "description": "Life Insurance Premium",
+      "balanceAfter": 6000,
+      "date": "2026-01-13T05:08:28.744Z"
+    },
+    {
+      "accountNumber": "INV002",
+      "userId": "USR3",
+      "type": "credit",
+      "amount": 5000,
+      "description": "Year End Bonus",
+      "balanceAfter": 20000,
+      "date": "2026-01-13T05:08:28.848Z"
+    },
+    {
+      "accountNumber": "INV002",
+      "userId": "USR3",
+      "type": "debit",
+      "amount": 4000,
+      "description": "Mutual Fund Investment",
+      "balanceAfter": 16000,
+      "date": "2026-01-13T05:08:28.902Z"
+    },
+    {
+      "accountNumber": "INV002",
+      "userId": "USR3",
+      "type": "debit",
+      "amount": 1800,
+      "description": "Health Insurance Premium",
+      "balanceAfter": 14200,
+      "date": "2026-01-13T05:08:28.966Z"
+    }
+  ],
+  "insurances": [
+    {
+      "insuranceId": "INS1768280908499",
+      "userId": "USR1",
+      "accountNumber": "SAV001",
+      "type": "Health",
+      "premium": 1200,
+      "coverageYears": 5,
+      "startDate": "2026-01-13T05:08:28.499Z",
+      "status": "ACTIVE"
+    },
+    {
+      "insuranceId": "INS1768280908786",
+      "userId": "USR2",
+      "accountNumber": "SAV002",
+      "type": "Life",
+      "premium": 2500,
+      "coverageYears": 10,
+      "startDate": "2026-01-13T05:08:28.786Z",
+      "status": "ACTIVE"
+    },
+    {
+      "insuranceId": "INS1768280909015",
+      "userId": "USR3",
+      "accountNumber": "INV002",
+      "type": "Health",
+      "premium": 1800,
+      "coverageYears": 4,
+      "startDate": "2026-01-13T05:08:29.015Z",
+      "status": "ACTIVE"
+    }
+  ]
+}
